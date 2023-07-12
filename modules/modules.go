@@ -14,3 +14,13 @@ func FetchPokemonNames(pokemons string) (names []string) {
 
 	return
 }
+
+func FetchPokemonPrice(pokemons string) (prices []string) {
+	for poke := pokemons; strings.Contains(poke, "</span></span>"); _, poke, _ = strings.Cut(poke, "</span></span>") {
+		process, _, _ := strings.Cut(poke, "</span></span>")
+
+		_, price, _ := strings.Cut(process, "</span>")
+		prices = append(prices, price)
+	}
+	return
+}
