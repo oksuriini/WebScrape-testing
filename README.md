@@ -8,12 +8,14 @@ Program does simple for loop that is iterated for maximum amount of pages, which
 
  - Capable of fetching all the names of the products (Pokemons in this case)
 
-## To do next
-
  - Scraping product prices
+
+## To do next
 
  - Scraping products based on newest/popularity/rating/price(lowest or highest)
 
  - Scraping product categories and/or tags
 
  - Functionality to scrape each product page individually, from which stocks and description can be also scraped
+
+ - Clean up code
